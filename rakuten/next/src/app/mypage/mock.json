@@ -1,0 +1,778 @@
+{
+  "mockUsers": [
+    {
+      "id": 12,
+      "name": "田中 太郎",
+      "email": "tanaka@example.com",
+      "phone": "090-1234-5678",
+      "gender": "male",
+      "birthday": "2000-01-01",
+      "address": "東京都新宿区西新宿1-1-1",
+      "is_has_car": true,
+      "note": "災害支援に関心があります。土日参加可能です。",
+      "role": "user",
+      "profile_image_id": 5,
+      "created_at": "2025-07-01T10:00:00Z",
+      "updated_at": "2025-08-01T12:00:00Z"
+    },
+    {
+      "id": 13,
+      "name": "佐藤 花子",
+      "email": "sato@example.com",
+      "phone": "080-9876-5432",
+      "gender": "female",
+      "birthday": "1995-05-15",
+      "address": "東京都渋谷区道玄坂2-10-7",
+      "is_has_car": false,
+      "note": "子育て支援や教育関連のボランティアに興味があります。",
+      "role": "user",
+      "profile_image_id": 6,
+      "created_at": "2025-06-15T09:30:00Z",
+      "updated_at": "2025-07-28T14:20:00Z"
+    },
+    {
+      "id": 14,
+      "name": "鈴木 一郎",
+      "email": "suzuki@example.com",
+      "phone": "070-1111-2222",
+      "gender": "male",
+      "birthday": "1988-12-03",
+      "address": "神奈川県横浜市中区本町6-50-10",
+      "is_has_car": true,
+      "note": "IT関連の知識を活かしてボランティア活動に参加したいです。",
+      "role": "user",
+      "profile_image_id": 7,
+      "created_at": "2025-05-20T16:45:00Z",
+      "updated_at": "2025-08-02T11:10:00Z"
+    },
+    {
+      "id": 15,
+      "name": "山田 美咲",
+      "email": "yamada@example.com",
+      "phone": "090-3333-4444",
+      "gender": "female",
+      "birthday": "2002-08-22",
+      "address": "千葉県千葉市中央区中央1-1-1",
+      "is_has_car": false,
+      "note": "学生です。環境問題に関心があります。",
+      "role": "user",
+      "profile_image_id": 8,
+      "created_at": "2025-07-10T13:20:00Z",
+      "updated_at": "2025-08-03T09:40:00Z"
+    },
+    {
+      "id": 16,
+      "name": "高橋 健太",
+      "email": "takahashi@example.com",
+      "phone": "080-5555-6666",
+      "gender": "male",
+      "birthday": "1992-03-18",
+      "address": "埼玉県さいたま市大宮区桜木町1-7-5",
+      "is_has_car": true,
+      "note": "医療従事者です。医療支援関連のボランティアができます。",
+      "role": "user",
+      "profile_image_id": 9,
+      "created_at": "2025-06-25T10:15:00Z",
+      "updated_at": "2025-08-01T15:30:00Z"
+    },
+    {
+      "id": 3,
+      "name": "災害支援団体A",
+      "email": "support@example.com",
+      "phone": "03-1111-2222",
+      "address": "東京都渋谷区",
+      "note": "地域密着で災害支援しています。緊急時対応可能。",
+      "role": "organization",
+      "location": "東京都渋谷区渋谷1-1-1",
+      "created_at": "2025-06-15T08:30:00Z",
+      "updated_at": "2025-08-01T11:45:00Z"
+    },
+    {
+      "id": 17,
+      "name": "環境保護協会B",
+      "email": "eco@example.com",
+      "phone": "03-7777-8888",
+      "address": "東京都世田谷区",
+      "note": "環境保護活動を中心に活動しています。海岸清掃、植樹活動など。",
+      "role": "organization",
+      "location": "東京都世田谷区三軒茶屋2-11-20",
+      "created_at": "2025-05-10T14:20:00Z",
+      "updated_at": "2025-07-30T16:50:00Z"
+    },
+    {
+      "id": 18,
+      "name": "子育て支援センターC",
+      "email": "childcare@example.com",
+      "phone": "03-9999-0000",
+      "address": "神奈川県川崎市",
+      "note": "子育て世帯の支援、保育補助、学習支援などを行っています。",
+      "role": "organization",
+      "location": "神奈川県川崎市川崎区駅前本町12-1",
+      "created_at": "2025-04-18T11:00:00Z",
+      "updated_at": "2025-08-02T13:25:00Z"
+    },
+    {
+      "id": 2,
+      "name": "はっぴー",
+      "email": "test@example.com",
+      "phone": "000-0000-0000",
+      "password": "password",
+      "address": "東京都新宿区",
+      "note": "はっぴー",
+      "role": "organization",
+      "created_at": "2025-08-07T10:42:10.000000Z",
+      "updated_at": "2025-08-07T10:42:10.000000Z"
+    }
+  ],
+  "mockOrganizations": [
+    {
+      "id": 3,
+      "name": "災害支援団体A",
+      "email": "support@example.com",
+      "phone": "03-1111-2222",
+      "address": "東京都渋谷区",
+      "note": "地域密着で災害支援しています。",
+      "role": "organization",
+      "created_at": "2025-06-15T08:30:00Z",
+      "updated_at": "2025-08-01T11:45:00Z"
+    },
+    {
+      "id": 17,
+      "name": "環境保護協会B",
+      "email": "eco@example.com",
+      "phone": "03-7777-8888",
+      "address": "東京都世田谷区",
+      "note": "環境保護活動を中心に活動しています。",
+      "role": "organization",
+      "created_at": "2025-05-10T14:20:00Z",
+      "updated_at": "2025-07-30T16:50:00Z"
+    },
+    {
+      "id": 18,
+      "name": "子育て支援センターC",
+      "email": "childcare@example.com",
+      "phone": "03-9999-0000",
+      "address": "神奈川県川崎市",
+      "note": "子育て世帯の支援を行っています。",
+      "role": "organization",
+      "created_at": "2025-04-18T11:00:00Z",
+      "updated_at": "2025-08-02T13:25:00Z"
+    },
+    {
+      "id": 2,
+      "name": "はっぴー",
+      "email": "test@example.com",
+      "phone": "000-0000-0000",
+      "password": "password",
+      "address": "東京都新宿区",
+      "note": "はっぴー",
+      "role": "organization",
+      "created_at": "2025-08-07T10:42:10.000000Z",
+      "updated_at": "2025-08-07T10:42:10.000000Z"
+    }
+  ],
+  "mockVolunteerContents": [
+    {
+      "id": 1,
+      "title": "避難所設営支援",
+      "location": "東京都新宿区",
+      "start_date": "2025-08-10",
+      "end_date": "2025-08-12",
+      "status": "recruiting",
+      "description": "災害時の避難所設営・運営のお手伝いをお願いします。テント設営、受付業務、物資配布などを行います。",
+      "apply_entries": [
+        {
+          "user": {
+            "id": 5,
+            "name": "佐藤太郎",
+            "email": "taro@example.com",
+            "gender": "male",
+            "birthday": "2002-05-15",
+            "is_has_car": true
+          },
+          "is_approved": false,
+          "chat_room_id": 123
+        },
+        {
+          "user": {
+            "id": 6,
+            "name": "山田花子",
+            "email": "hana@example.com",
+            "gender": "female",
+            "birthday": "2001-11-30",
+            "is_has_car": false
+          },
+          "is_approved": false,
+          "chat_room_id": 124
+        },
+        {
+          "user": {
+            "id": 12,
+            "name": "田中 太郎",
+            "email": "tanaka@example.com",
+            "gender": "male",
+            "birthday": "2000-01-01",
+            "is_has_car": true
+          },
+          "is_approved": false,
+          "chat_room_id": 125
+        },
+        {
+          "user": {
+            "id": 13,
+            "name": "佐藤 花子",
+            "email": "sato@example.com",
+            "gender": "female",
+            "birthday": "1995-05-15",
+            "is_has_car": false
+          },
+          "is_approved": true,
+          "chat_room_id": 126
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "物資運搬・仕分け",
+      "location": "大阪府大阪市",
+      "start_date": "2025-09-01",
+      "end_date": "2025-09-02",
+      "status": "recruiting",
+      "description": "災害支援物資の運搬・仕分け作業です。重い物を運ぶ作業もありますので体力に自信のある方歓迎。",
+      "apply_entries": [
+        {
+          "user": {
+            "id": 14,
+            "name": "鈴木 一郎",
+            "email": "suzuki@example.com",
+            "gender": "male",
+            "birthday": "1988-12-03",
+            "is_has_car": true
+          },
+          "is_approved": false,
+          "chat_room_id": 127
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "海岸清掃活動",
+      "location": "神奈川県鎌倉市",
+      "start_date": "2025-08-20",
+      "end_date": "2025-08-20",
+      "status": "recruiting",
+      "description": "海岸のゴミ拾いと分別作業を行います。環境保護に関心のある方大歓迎。軍手・ゴミ袋は用意します。",
+      "apply_entries": [
+        {
+          "user": {
+            "id": 15,
+            "name": "山田 美咲",
+            "email": "yamada@example.com",
+            "gender": "female",
+            "birthday": "2002-08-22",
+            "is_has_car": false
+          },
+          "is_approved": true,
+          "chat_room_id": 128
+        },
+        {
+          "user": {
+            "id": 16,
+            "name": "高橋 健太",
+            "email": "takahashi@example.com",
+            "gender": "male",
+            "birthday": "1992-03-18",
+            "is_has_car": true
+          },
+          "is_approved": false,
+          "chat_room_id": 129
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "子ども学習支援",
+      "location": "神奈川県川崎市",
+      "start_date": "2025-08-15",
+      "end_date": "2025-08-25",
+      "status": "recruiting",
+      "description": "小中学生の夏休み学習支援です。宿題のサポート、読み聞かせ、簡単な工作指導などを行います。",
+      "apply_entries": [
+        {
+          "user": {
+            "id": 13,
+            "name": "佐藤 花子",
+            "email": "sato@example.com",
+            "gender": "female",
+            "birthday": "1995-05-15",
+            "is_has_car": false
+          },
+          "is_approved": true,
+          "chat_room_id": 130
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "高齢者施設イベント補助",
+      "location": "埼玉県さいたま市",
+      "start_date": "2025-09-10",
+      "end_date": "2025-09-10",
+      "status": "recruiting",
+      "description": "高齢者施設での敬老の日イベントのお手伝いです。レクリエーション補助、配膳補助、清掃作業など。",
+      "apply_entries": []
+    },
+    {
+      "id": 6,
+      "title": "植樹活動",
+      "location": "東京都多摩市",
+      "start_date": "2025-10-05",
+      "end_date": "2025-10-05",
+      "status": "recruiting",
+      "description": "公園での植樹活動です。苗木の植え付け、水やり、周辺の清掃を行います。環境保護に貢献しましょう。",
+      "apply_entries": [
+        {
+          "user": {
+            "id": 12,
+            "name": "田中 太郎",
+            "email": "tanaka@example.com",
+            "gender": "male",
+            "birthday": "2000-01-01",
+            "is_has_car": true
+          },
+          "is_approved": true,
+          "chat_room_id": 131
+        },
+        {
+          "user": {
+            "id": 14,
+            "name": "鈴木 一郎",
+            "email": "suzuki@example.com",
+            "gender": "male",
+            "birthday": "1988-12-03",
+            "is_has_car": true
+          },
+          "is_approved": false,
+          "chat_room_id": 132
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "地域コミュニティ支援活動",
+      "location": "東京都新宿区",
+      "start_date": "2025-08-15",
+      "end_date": "2025-08-17",
+      "status": "recruiting",
+      "description": "地域住民との交流イベントの企画・運営のお手伝いです。イベント準備、受付対応、片付け作業などを行います。地域の皆さんと楽しく交流しましょう。",
+      "organization": {
+        "id": 2,
+        "name": "はっぴー"
+      },
+      "apply_entries": [
+        {
+          "user": {
+            "id": 12,
+            "name": "田中 太郎",
+            "email": "tanaka@example.com",
+            "gender": "male",
+            "birthday": "2000-01-01",
+            "is_has_car": true
+          },
+          "is_approved": false,
+          "chat_room_id": 133
+        },
+        {
+          "user": {
+            "id": 15,
+            "name": "山田 美咲",
+            "email": "yamada@example.com",
+            "gender": "female",
+            "birthday": "2002-08-22",
+            "is_has_car": false
+          },
+          "is_approved": false,
+          "chat_room_id": 134
+        },
+        {
+          "user": {
+            "id": 16,
+            "name": "高橋 健太",
+            "email": "takahashi@example.com",
+            "gender": "male",
+            "birthday": "1992-03-18",
+            "is_has_car": true
+          },
+          "is_approved": true,
+          "chat_room_id": 135
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "青少年教育支援プログラム",
+      "location": "東京都新宿区",
+      "start_date": "2025-09-01",
+      "end_date": "2025-09-03",
+      "status": "recruiting",
+      "description": "中高生向けの職業体験・進路相談イベントのサポートです。受付業務、会場案内、各ブースでの補助業務を行います。若い世代の未来を応援しましょう。",
+      "organization": {
+        "id": 2,
+        "name": "はっぴー"
+      },
+      "apply_entries": [
+        {
+          "user": {
+            "id": 13,
+            "name": "佐藤 花子",
+            "email": "sato@example.com",
+            "gender": "female",
+            "birthday": "1995-05-15",
+            "is_has_car": false
+          },
+          "is_approved": true,
+          "chat_room_id": 136
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "新宿区防災講習会",
+      "location": "東京都新宿区",
+      "start_date": "2025-06-15",
+      "end_date": "2025-06-15",
+      "status": "completed",
+      "description": "地域住民を対象とした防災講習会です。避難経路の確認、応急処置の基礎、防災グッズの使い方などを学びます。",
+      "apply_entries": [
+        {
+          "user": {
+            "id": 12,
+            "name": "田中 太郎",
+            "email": "tanaka@example.com",
+            "gender": "male",
+            "birthday": "2000-01-01",
+            "is_has_car": true
+          },
+          "is_approved": true,
+          "chat_room_id": 150
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "地域清掃キャンペーン",
+      "location": "東京都新宿区",
+      "start_date": "2025-05-20",
+      "end_date": "2025-05-20",
+      "status": "completed",
+      "description": "新宿区内の公園や歩道の清掃活動です。地域の美化に貢献し、住民同士の交流を深めます。",
+      "apply_entries": [
+        {
+          "user": {
+            "id": 12,
+            "name": "田中 太郎",
+            "email": "tanaka@example.com",
+            "gender": "male",
+            "birthday": "2000-01-01",
+            "is_has_car": true
+          },
+          "is_approved": true,
+          "chat_room_id": 151
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "環境保護啓発イベント",
+      "location": "東京都新宿区",
+      "start_date": "2025-07-01",
+      "end_date": "2025-07-01",
+      "status": "completed",
+      "description": "環境保護の大切さを地域住民に伝える啓発イベントです。リサイクルの方法やエコライフの提案を行います。",
+      "apply_entries": [
+        {
+          "user": {
+            "id": 15,
+            "name": "山田 美咲",
+            "email": "yamada@example.com",
+            "gender": "female",
+            "birthday": "2002-08-22",
+            "is_has_car": false
+          },
+          "is_approved": true,
+          "chat_room_id": 152
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "健康相談会サポート",
+      "location": "東京都新宿区",
+      "start_date": "2025-06-25",
+      "end_date": "2025-06-25",
+      "status": "completed",
+      "description": "地域住民向けの健康相談会のサポート業務です。受付対応、資料配布、会場設営などを行います。",
+      "apply_entries": [
+        {
+          "user": {
+            "id": 16,
+            "name": "高橋 健太",
+            "email": "takahashi@example.com",
+            "gender": "male",
+            "birthday": "1992-03-18",
+            "is_has_car": true
+          },
+          "is_approved": true,
+          "chat_room_id": 153
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "医療支援ボランティア研修",
+      "location": "東京都新宿区",
+      "start_date": "2025-05-10",
+      "end_date": "2025-05-12",
+      "status": "completed",
+      "description": "医療従事者向けのボランティア研修です。災害時医療支援の基礎知識と実践技術を学びます。",
+      "apply_entries": [
+        {
+          "user": {
+            "id": 16,
+            "name": "高橋 健太",
+            "email": "takahashi@example.com",
+            "gender": "male",
+            "birthday": "1992-03-18",
+            "is_has_car": true
+          },
+          "is_approved": true,
+          "chat_room_id": 154
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "子育て世帯交流イベント",
+      "location": "東京都新宿区",
+      "start_date": "2025-07-10",
+      "end_date": "2025-07-10",
+      "status": "completed",
+      "description": "子育て世帯同士の交流を深めるイベントです。子育て相談会、親子でできる工作教室などを開催します。",
+      "apply_entries": [
+        {
+          "user": {
+            "id": 13,
+            "name": "佐藤 花子",
+            "email": "sato@example.com",
+            "gender": "female",
+            "birthday": "1995-05-15",
+            "is_has_car": false
+          },
+          "is_approved": true,
+          "chat_room_id": 155
+        }
+      ]
+    }
+  ],
+  "mockApplications": {
+    "waiting": [
+      {
+        "id": 10,
+        "borantia_content": {
+          "id": 1,
+          "title": "炊き出し手伝い",
+          "location": "東京都",
+          "organization": {
+            "id": 5,
+            "name": "災害支援団体A"
+          }
+        },
+        "is_approved": false
+      },
+      {
+        "id": 11,
+        "borantia_content": {
+          "id": 7,
+          "title": "子どもプログラミング教室補助",
+          "location": "神奈川県横浜市",
+          "organization": {
+            "id": 19,
+            "name": "ITボランティア協会"
+          }
+        },
+        "is_approved": false
+      },
+      {
+        "id": 12,
+        "borantia_content": {
+          "id": 8,
+          "title": "地域清掃活動",
+          "location": "東京都渋谷区",
+          "organization": {
+            "id": 17,
+            "name": "環境保護協会B"
+          }
+        },
+        "is_approved": false
+      }
+    ],
+    "approved": [
+      {
+        "id": 101,
+        "borantia_content": {
+          "id": 20,
+          "title": "河川清掃ボランティア",
+          "location": "東京都多摩市",
+          "organization": {
+            "id": 17,
+            "name": "環境保護協会B"
+          }
+        },
+        "is_approved": true
+      },
+      {
+        "id": 102,
+        "borantia_content": {
+          "id": 21,
+          "title": "災害時避難誘導訓練",
+          "location": "東京都新宿区",
+          "organization": {
+            "id": 3,
+            "name": "災害支援団体A"
+          }
+        },
+        "is_approved": true
+      },
+      {
+        "id": 103,
+        "borantia_content": {
+          "id": 22,
+          "title": "地域防災イベント手伝い",
+          "location": "東京都渋谷区",
+          "organization": {
+            "id": 3,
+            "name": "災害支援団体A"
+          }
+        },
+        "is_approved": true
+      },
+      {
+        "id": 201,
+        "borantia_content": {
+          "id": 25,
+          "title": "森林保護活動",
+          "location": "神奈川県相模原市",
+          "organization": {
+            "id": 17,
+            "name": "環境保護協会B"
+          }
+        },
+        "is_approved": true
+      },
+      {
+        "id": 202,
+        "borantia_content": {
+          "id": 26,
+          "title": "リサイクル推進キャンペーン",
+          "location": "千葉県千葉市",
+          "organization": {
+            "id": 17,
+            "name": "環境保護協会B"
+          }
+        },
+        "is_approved": true
+      },
+      {
+        "id": 301,
+        "borantia_content": {
+          "id": 30,
+          "title": "医療ボランティア研修",
+          "location": "埼玉県さいたま市",
+          "organization": {
+            "id": 25,
+            "name": "医療支援団体F"
+          }
+        },
+        "is_approved": true
+      },
+      {
+        "id": 302,
+        "borantia_content": {
+          "id": 31,
+          "title": "健康診断補助ボランティア",
+          "location": "埼玉県川口市",
+          "organization": {
+            "id": 25,
+            "name": "医療支援団体F"
+          }
+        },
+        "is_approved": true
+      },
+      {
+        "id": 303,
+        "borantia_content": {
+          "id": 32,
+          "title": "救命講習会サポート",
+          "location": "東京都港区",
+          "organization": {
+            "id": 25,
+            "name": "医療支援団体F"
+          }
+        },
+        "is_approved": true
+      },
+      {
+        "id": 304,
+        "borantia_content": {
+          "id": 33,
+          "title": "高齢者健康相談会",
+          "location": "東京都世田谷区",
+          "organization": {
+            "id": 20,
+            "name": "高齢者支援団体D"
+          }
+        },
+        "is_approved": true
+      },
+      {
+        "id": 401,
+        "borantia_content": {
+          "id": 40,
+          "title": "子ども料理教室サポート",
+          "location": "東京都品川区",
+          "organization": {
+            "id": 18,
+            "name": "子育て支援センターC"
+          }
+        },
+        "is_approved": true
+      },
+      {
+        "id": 402,
+        "borantia_content": {
+          "id": 41,
+          "title": "親子読書会ボランティア",
+          "location": "神奈川県川崎市",
+          "organization": {
+            "id": 18,
+            "name": "子育て支援センターC"
+          }
+        },
+        "is_approved": true
+      },
+      {
+        "id": 403,
+        "borantia_content": {
+          "id": 42,
+          "title": "小学生夏期学習支援",
+          "location": "東京都目黒区",
+          "organization": {
+            "id": 21,
+            "name": "教育支援NPO"
+          }
+        },
+        "is_approved": true
+      }
+    ]
+  }
+}

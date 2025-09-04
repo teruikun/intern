@@ -1,0 +1,188 @@
+[
+  {
+    "id": 1,
+    "title": "避難所設営ボランティア",
+    "location": "東京都新宿区",
+    "start_date": "2025-08-10",
+    "end_date": "2025-08-12",
+    "recruiting_number": 10,
+    "applicants_number": 4,
+    "phone": "090-1234-5678",
+    "accommodation": "あり",
+    "car": "不要",
+    "note": "テントを張ったり、寝具の準備などを行います。",
+    "organization": {
+      "id": 3,
+      "name": "災害支援団体A",
+      "email": "support@example.com",
+      "phone": "03-1111-2222",
+      "address": "東京都渋谷区〜"
+    },
+    "tools": [
+      { "id": 1, "name": "軍手" },
+      { "id": 2, "name": "懐中電灯" }
+    ],
+    "image": {
+      "id": 8,
+      "file_path": "/thumbnail_saigai_volunteer.jpg"
+    },
+    "created_at": "2025-08-01T10:00:00Z",
+    "updated_at": "2025-08-02T15:30:00Z"
+  },
+  {
+    "id": 2,
+    "title": "森林保全活動",
+    "location": "長野県軽井沢町",
+    "start_date": "2025-09-02",
+    "end_date": "2025-09-04",
+    "recruiting_number": 20,
+    "applicants_number": 8,
+    "phone": "090-5678-1234",
+    "accommodation": "なし",
+    "car": "必要",
+    "note": "間伐作業と植樹活動を行います。自然保護に貢献しましょう。",
+    "organization": {
+      "id": 5,
+      "name": "軽井沢環境保護団体",
+      "email": "forest@karuizawa.org",
+      "phone": "0267-12-3456",
+      "address": "長野県軽井沢町軽井沢1234"
+    },
+    "tools": [
+      { "id": 3, "name": "作業用手袋" },
+      { "id": 4, "name": "長靴" },
+      { "id": 5, "name": "雨具" },
+      { "id": 6, "name": "防虫スプレー" }
+    ],
+    "image": {
+      "id": 9,
+      "file_path": "/gomihiroi_volunteer_woman.png"
+    },
+    "created_at": "2025-08-01T12:00:00Z",
+    "updated_at": "2025-08-03T09:15:00Z"
+  },
+  {
+    "id": 3,
+    "title": "海岸清掃活動",
+    "location": "神奈川県鎌倉市",
+    "start_date": "2025-08-20",
+    "end_date": "2025-08-21",
+    "recruiting_number": 15,
+    "applicants_number": 6,
+    "phone": "090-9876-5432",
+    "accommodation": "なし",
+    "car": "不要",
+    "note": "湘南の海岸でゴミ拾いと分別作業を行います。環境保護活動です。",
+    "organization": {
+      "id": 7,
+      "name": "湘南環境保護協会",
+      "email": "clean@shonan.org",
+      "phone": "0467-22-3333",
+      "address": "神奈川県鎌倉市由比ガ浜1-1-1"
+    },
+    "tools": [
+      { "id": 7, "name": "ゴミ袋" },
+      { "id": 8, "name": "軍手" },
+      { "id": 9, "name": "帽子" }
+    ],
+    "image": {
+      "id": 10,
+      "file_path": "/beach_cleanup.jpg"
+    },
+    "created_at": "2025-08-01T14:00:00Z",
+    "updated_at": "2025-08-04T11:20:00Z"
+  },
+  {
+    "id": 4,
+    "title": "高齢者支援ボランティア",
+    "location": "大阪府大阪市",
+    "start_date": "2025-08-25",
+    "end_date": "2025-08-27",
+    "recruiting_number": 8,
+    "applicants_number": 3,
+    "phone": "090-1111-2222",
+    "accommodation": "あり",
+    "car": "不要",
+    "note": "高齢者施設での食事介助やレクリエーション活動のお手伝いをします。",
+    "organization": {
+      "id": 8,
+      "name": "大阪福祉支援団体",
+      "email": "welfare@osaka.org",
+      "phone": "06-1234-5678",
+      "address": "大阪府大阪市中央区大手前1-1-1"
+    },
+    "tools": [
+      { "id": 10, "name": "エプロン" },
+      { "id": 11, "name": "室内履き" }
+    ],
+    "image": {
+      "id": 11,
+      "file_path": "/elderly_care.jpg"
+    },
+    "created_at": "2025-08-01T16:00:00Z",
+    "updated_at": "2025-08-05T13:45:00Z"
+  },
+  {
+    "id": 5,
+    "title": "子どもキャンプ運営",
+    "location": "静岡県富士宮市",
+    "start_date": "2025-09-10",
+    "end_date": "2025-09-12",
+    "recruiting_number": 12,
+    "applicants_number": 5,
+    "phone": "090-3333-4444",
+    "accommodation": "あり",
+    "car": "必要",
+    "note": "小学生を対象としたキャンプ活動のサポートスタッフとして参加します。",
+    "organization": {
+      "id": 9,
+      "name": "富士山青少年育成会",
+      "email": "camp@fujisan.org",
+      "phone": "0544-11-2233",
+      "address": "静岡県富士宮市宮町1-1"
+    },
+    "tools": [
+      { "id": 12, "name": "動きやすい服装" },
+      { "id": 13, "name": "笛" },
+      { "id": 14, "name": "救急セット" }
+    ],
+    "image": {
+      "id": 12,
+      "file_path": "/kids_camp.jpg"
+    },
+    "created_at": "2025-08-01T18:00:00Z",
+    "updated_at": "2025-08-06T08:30:00Z"
+  },
+  {
+    "id": 6,
+    "title": "農業体験ボランティア",
+    "location": "千葉県成田市",
+    "start_date": "2025-09-15",
+    "end_date": "2025-09-17",
+    "recruiting_number": 25,
+    "applicants_number": 12,
+    "phone": "090-5555-6666",
+    "accommodation": "なし",
+    "car": "必要",
+    "note": "稲刈りと野菜収穫のお手伝いをします。農業の魅力を体験しましょう。",
+    "organization": {
+      "id": 10,
+      "name": "成田農業振興会",
+      "email": "farm@narita.org",
+      "phone": "0476-33-4455",
+      "address": "千葉県成田市公津の杜1-1-1"
+    },
+    "tools": [
+      { "id": 15, "name": "作業着" },
+      { "id": 16, "name": "長靴" },
+      { "id": 17, "name": "タオル" },
+      { "id": 18, "name": "水筒" }
+    ],
+    "image": {
+      "id": 13,
+      "file_path": "/farm_volunteer.jpg"
+    },
+    "created_at": "2025-08-01T20:00:00Z",
+    "updated_at": "2025-08-07T10:15:00Z"
+  }
+]
